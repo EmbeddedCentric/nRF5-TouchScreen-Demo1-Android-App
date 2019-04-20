@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">nRF5 TouchScreen Demo1</string>
+
+    <string name="Search">Scan and connect</string>
+    <string name="ConnectionLog"></string>
+    <string name="BoardController">Board Controllers</string>
+    <string name="ConnectionController">Connection Controllers</string>
+    <string name="Loglabel">Connection Logs</string>
+    <string name="EmbeddedCentric">www.EmbeddedCentric.com</string>
+    <string name="Disconnect">Disconnect</string>
+    <string name="LEDID">LED 4</string>
+</resources>

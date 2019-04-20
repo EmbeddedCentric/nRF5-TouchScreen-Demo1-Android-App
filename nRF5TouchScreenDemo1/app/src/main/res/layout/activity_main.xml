@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/EmbeddedCentric" />
+
+    <TextView
+        android:id="@+id/ConnecttextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ConnectionController" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:text="@string/Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:enabled="false"
+        android:onClick="searchBluetooth"
+        />
+
+    <Button
+        android:id="@+id/disconnect_button"
+        android:text="@string/Disconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:enabled="false"
+        android:onClick="Disconnect"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ControltextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/BoardController" />
+
+        <Switch
+            android:id="@+id/led_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:paddingStart="12dp"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingEnd="12dp"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:switchPadding="12dp"
+            android:text="@string/LEDID" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/LoggerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Loglabel" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ConLogtextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ConnectionLog" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
